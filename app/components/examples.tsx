@@ -30,18 +30,21 @@ export const Examples = () => {
 
   const handleSelectedTags = (selectedTag: Tag) => {
     setSearch((prevState) => {
-      // Check if the tag is already in the state
-      const tagExists = prevState?.tags.some(
-        (tag) => tag.text === selectedTag.text
-      );
+      if (prevState) {
+        // Check if the tag is already in the state
+        const tagExists = prevState?.tags.some(
+          (tag) => tag.text === selectedTag.text
+        );
 
-      return {
-        ...prevState,
-        // If the tag exists, remove it; otherwise, add it
-        tags: tagExists
-          ? prevState?.tags.filter((tag) => tag.text !== selectedTag.text)
-          : [...(prevState?.tags ?? []), selectedTag],
-      };
+        return {
+          ...prevState,
+          // If the tag exists, remove it; otherwise, add it
+          tags: tagExists
+            ? prevState?.tags.filter((tag) => tag.text !== selectedTag.text)
+            : [...(prevState?.tags ?? []), selectedTag],
+        };
+      }
+      return null;
     });
   };
 
@@ -165,7 +168,7 @@ export const Examples = () => {
         <ExampleList
           data={list}
           onTagSelect={handleSelectedTags}
-          selectedTags={search?.tags}
+          selectedTags={search?.tags as Tag[]}
         />
       )}
     </div>
@@ -221,6 +224,7 @@ export const ExampleList = ({
 };
 
 function getFuse(data: Example[]) {
+  // @ts-ignore
   const options: Fuse.IFuseOptions<Example> = {
     keys: ["title", "description", "link"],
   };
