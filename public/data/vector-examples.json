@@ -1,0 +1,107 @@
+{
+  "stacks": ["Java", "Javascript", "Python", "Rust", "Go"],
+  "models": [
+    "OpenAI",
+    "Sentence Transformers",
+    "CLIP",
+    "BERT",
+    "HuggingFace",
+    "GPT-3.5-turbo",
+    "text-embedding-ada-002"
+  ],
+  "list": [
+    {
+      "title": "Image Search",
+      "description": "Image Similarity Search using CLIP",
+      "tags": [
+        { "type": "stack", "text": "Python" },
+        { "type": "model", "text": "CLIP" },
+        { "type": "model", "text": "HuggingFace" }
+      ],
+      "link": "https://colab.research.google.com/drive/1y7ZBBxzEOAeSRDhyOeTxIJADxBC-0Fue?authuser=1"
+    },
+    {
+      "title": "Learn Vector Stores",
+      "description": "Learn How Vector Stores Work by Building a Recommendation Engine",
+      "tags": [{ "type": "stack", "text": "Python" }],
+      "link": "https://colab.research.google.com/drive/1CpKUuPr1458sBZkqvL6Km_HBj-IS0fNa?authuser=1"
+    },
+    {
+      "title": "RAG Chatbot",
+      "description": "RAG (Retrieval Augmented Generation) Chatbot with OpenAI and Upstash Vector",
+      "tags": [
+        { "type": "stack", "text": "Python" },
+        { "type": "model", "text": "OpenAI" },
+        { "type": "model", "text": "text-embedding-ada-002" },
+        { "type": "model", "text": "GPT-3.5-turbo" }
+      ],
+      "link": "https://colab.research.google.com/drive/1zSzb2lajFMxf6FDxDM0sUe5wpIx4KyU2?authuser=1"
+    },
+    {
+      "title": "Semantic Search with Sentence Transformers",
+      "description": "Semantic Search using Sentence Transformers and Upstash Vector",
+      "tags": [
+        { "type": "stack", "text": "Python" },
+        { "type": "model", "text": "Sentence Transformers" },
+        { "type": "model", "text": "HuggingFace" }
+      ],
+      "link": "https://colab.research.google.com/drive/1NhqEzjKdAGfI-nhEa3pfqmBXWl2oN0Ve?authuser=1"
+    },
+    {
+      "title": "Semantic Search with BERT",
+      "description": "Semantic Search with DistilBERT on HuggingFace",
+      "tags": [
+        { "type": "stack", "text": "Python" },
+        { "type": "model", "text": "BERT" },
+        { "type": "model", "text": "HuggingFace" }
+      ],
+      "link": "https://colab.research.google.com/drive/1xXSLtG2uItaBWAxXYgzwa5jo669mDk2p?authuser=1"
+    },
+    {
+      "title": "Semantic Search with OpenAI",
+      "description": "Semantic Search with OpenAI and Upstash Vector",
+      "tags": [
+        { "type": "stack", "text": "Python" },
+        { "type": "model", "text": "OpenAI" },
+        { "type": "model", "text": "text-embedding-ada-002" }
+      ],
+      "link": "https://colab.research.google.com/drive/1WGSEe11RsG1_TwyQ09-lONOrEDwDLaC1?authuser=1"
+    },
+    {
+      "title": "API Examples",
+      "description": "Upstash Vector API Examples",
+      "tags": [{ "type": "stack", "text": "Python" }],
+      "link": "https://colab.research.google.com/drive/1RLcGtNEkGrdj6f6yBK78cSrSdl6ht-5S?authuser=1"
+    },
+    {
+      "title": "Upsy",
+      "description": "Upsy is a RAG based Slackbot which remembers all conversations.",
+      "tags": [
+        { "type": "stack", "text": "Javascript" },
+        { "type": "model", "text": "OpenAI" },
+        { "type": "model", "text": "text-embedding-ada-002" }
+      ],
+      "link": "https://github.com/upstash/upsy"
+    },
+    {
+      "title": "Semantic Search on Stackoverflow",
+      "description": "Blog: Semantic Search using all-MiniLM-L6-v2 model on HuggingFace",
+      "tags": [
+        { "type": "stack", "text": "Python" },
+        { "type": "model", "text": "HuggingFace" },
+        { "type": "model", "text": "Sentence Transformers" }
+      ],
+      "link": "https://upstash.com/blog/semantic-search-vector"
+    },
+    {
+      "title": "Image Similarity Search",
+      "description": "Blog: Image Search using CLIP model on HuggingFace",
+      "tags": [
+        { "type": "stack", "text": "Python" },
+        { "type": "model", "text": "HuggingFace" },
+        { "type": "model", "text": "CLIP" }
+      ],
+      "link": "https://upstash.com/blog/image-similarity-search"
+    }
+  ]
+}
